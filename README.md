@@ -1,27 +1,32 @@
-### SQL TypeORM sample
+# NestJS MySQL TypeORM
 
-### Installation
+A sample NestJS application connecting to MySQL using TypeORM for database operations.
 
+## Tech Stack
 
-`npm install`
+- **Framework:** NestJS
+- **Language:** TypeScript
+- **Database:** MySQL
+- **ORM:** TypeORM
 
-### Running
+## Prerequisites
 
-This example requires docker or a local MySQL installation.  If using a local MySQL database, see `app.module.ts` for credentials, and make sure there are matching credentials in the database and the source code.
+- Docker (recommended) or a local MySQL installation
+- Node.js
 
-#### Docker
+## Getting Started
 
-There is a `docker-compose.yml` file for starting Docker.
+```bash
+# Start MySQL via Docker
+docker-compose up -d
 
-`docker-compose up`
+# Install dependencies and run
+npm install
+npm run start:dev
+```
 
-After running the sample, you can stop the Docker container with
+See `app.module.ts` for database credentials configuration.
 
-`docker-compose down`
+## License
 
-### Run the sample
-
-Then, run Nest as usual:
-
-`npm run start`
-
+Proprietary — Brilworks Software
